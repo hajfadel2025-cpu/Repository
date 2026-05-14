@@ -98,3 +98,29 @@
     </script>
 </body>
 </html>
+<!-- قسم إدخال مادة جديدة -->
+<div class="inventory-header">
+    <h3>إدارة المخزون</h3>
+    <div class="add-item-form">
+        <input type="text" id="itemName" placeholder="اسم المادة">
+        <input type="number" id="itemQty" placeholder="الكمية">
+        <input type="number" id="itemPrice" placeholder="السعر (USD)">
+        <button onclick="addItem()" class="btn-add">إضافة للمخزن</button>
+    </div>
+</div>
+
+<!-- جدول عرض المواد -->
+<table class="inventory-table">
+    <thead>
+        <tr>
+            <th>المادة</th>
+            <th>الكمية المتوفرة</th>
+            <th>السعر</th>
+            <th>الحالة</th>
+            <th>إجراءات</th>
+        </tr>
+    </thead>
+    <tbody id="inventoryBody">
+        <!-- سيتم ملء البيانات هنا برمجياً -->
+    </tbody>
+</table>
